@@ -213,4 +213,8 @@ if [[ "${1#-}" != "$1" ]]; then
   set -- pulseaudio "$@"
 fi
 
+alsactl init
+alsactl restore
+amixer sset 'Speaker' 95%
+
 exec "$@"
