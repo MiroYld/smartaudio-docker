@@ -27,6 +27,7 @@ RUN install_packages \
   pulseaudio-bluez \
   pulseaudio-utils \
   sox \
+  mpg123 \
   xxd
 
  
